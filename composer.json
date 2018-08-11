@@ -1,0 +1,20 @@
+{
+    "name": "dimezilla/php-doc-markdown",
+    "description": "A writer for phpdoc to format my documentation into markdown",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dimezilla",
+            "email": "diamond.joshh@gmail.com"
+        }
+    ],
+    "require": {
+        "phpdocumentor/phpdocumentor": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "DimeZilla\\PHPDocMarkdown\\": "src"
+        }
+     }
+}
