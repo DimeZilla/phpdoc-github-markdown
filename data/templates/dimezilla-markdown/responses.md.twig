@@ -1,0 +1,5 @@
+#### RETURNS: {{ response.types ? ''~response.types|join('|')|raw }}
+
+{% if response.description is not empty %}
+{{ response.description }}
+{% endif %}

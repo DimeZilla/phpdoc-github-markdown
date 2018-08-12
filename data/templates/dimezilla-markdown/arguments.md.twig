@@ -1,0 +1,9 @@
+{% if arguments is not empty %}
+#### PARAMETERS:
+{% for argument in arguments %}
+
+`{{ argument.name }}`
+  - *type:* **{{ argument.types ? argument.types|join('&#124;') }}**
+  - *descrption:* argument.description
+{% endfor %}
+{% endif %}{# method.arguments is not empty #}

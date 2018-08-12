@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<checkstyle version="1.3.0">
+  <file name="TestFunctions.php"/>
+  <file name="TestClass.php"/>
+  <file name="SecondTestClass.php"/>
+</checkstyle>

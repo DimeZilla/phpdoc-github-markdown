@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+  <author>Joshua diamond</author>
+  <email>diamond.joshh@gmail.com</email>
+  <version>1.0.0</version>
+  <copyright>Joshua Diamond 2018</copyright>
+  <description>Documents public APIs and functions</description>
+  <transformations>
+    <transformation writer="twig" source="templates/dimezilla-markdown/index.md.twig" artifact="README.md" />
+  </transformations>
+  <parameters>
+    <parameter key="twig-debug">true</parameter>
+    <parameter key="twig-extension">DimeZilla\PHPDocMarkdown\Extension\Methods</parameter>
+    <parameter key="twig-extension">DimeZilla\PHPDocMarkdown\Extension\AnchorLink</parameter>
+  </parameters>
+</template>

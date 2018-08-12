@@ -8,8 +8,9 @@
         <target>docs</target>
     </transformer>
     <transformations>
-        <template name="markdown-public" />
-        <transformation write="FileIo" />
+        <!-- lets us know if there are any errors in our comments -->
+        <template name="checkstyle" />
+        <template name="../data/templates/dimezilla-markdown" />
     </transformations>
     <files>
         <directory>src/</directory>

@@ -1,4 +1,4 @@
-# PHPDoc Markdown Documentor
+# PHPDoc Github Markdown Documentor
 A template for writing documentation using phpDoc. Writes documentation for all Public apis and global functions.
 
 ## Why
@@ -8,4 +8,9 @@ I could only find a documentator for public APIs but I wanted something that wou
 Write me a note or log an issue in github.
 
 ## Testing
-Run phpdoc from the `./test/` directory and see if the output is satisfactory to you
+Run phpdoc from the `./example/` directory and see if the output is satisfactory to you.
+
+```
+cd test
+../vendor/bin/phpdoc
+```
