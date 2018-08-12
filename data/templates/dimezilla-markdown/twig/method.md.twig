@@ -3,7 +3,7 @@
 {{ method.summary|raw }}
 
 ```php
-{{ class.name }}::{{ method.name }}( {% for argument in method.arguments %}
+{{ node.name }}::{{ method.name }}( {% for argument in method.arguments %}
 {{- argument.types ? argument.types|join('|')~' ' }}
 {{- argument.byReference ? '&' }}
 {{- argument.name }}{{ argument.default ? ' = '~argument.default }}

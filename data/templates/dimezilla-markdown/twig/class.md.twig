@@ -1,0 +1,56 @@
+{% extends "twig/layouts/mardown.md.twig" %}
+
+{% block content %}
+# {{ node.name }}
+`{{ node.FullyQualifiedStructuralElementName }}`
+
+**namespace:** `{{ node.namespace }}`
+
+{{ node.summary|raw }}
+
+{% if node.description is not empty %}
+### **description:**
+{{ node.description|raw }}
+{% endif %}
+
+{% if node.parent %}
+### **Parent node:** {{ node.parent.FullyQualifiedStructuralElementName }}
+{% endif %}
+
+{% if node.interfaces is not empty %}
+### **Implements:** {{ node.interfaces|join(', ')|raw }}
+{% endif %}
+
+{% if node.deprecated %}
+### **Warning: this node is **deprecated**. This means that this node will likely be removed in a future version.**
+{% endif %}
+
+{% if node.tags.see is not empty or node.tags.link is not empty %}
+### **See Also:**
+{% for see in node.tags.see %}
+  * {{ see.reference }} {% if see.description %}- {{ see.description|raw }}{% endif %}
+{% endfor %}
+{% for link in node.tags.link %}
+* {{ link.link }} {% if link.description and link.description != link.link %}- {{ link.description|raw }}{% endif %}
+{% endfor %}
+{% endif %}{# node.tags.see || node.tags.link #}
+
+## **Properties:**
+{% for property in node.properties %}
+### *{{ property.visibility }}* {% if property.static %}*static* {% endif %}`${{ property.name }}`
+* visibility: {{ property.visibility }}
+* type: {{ property.types|join('|')~' ' }}
+* default: {{ ''~property.default }}
+
+{{ property.summary }}
+
+{{ property.description }}
+
+
+{% endfor %}
+
+## **Methods:**
+{% for method in getMethods(node) %}
+{% include 'method.md.twig' %}
+{% endfor %}
+{% endblock %}

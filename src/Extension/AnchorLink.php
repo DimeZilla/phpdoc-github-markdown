@@ -31,7 +31,9 @@ class AnchorLink extends Twig_Extension
      */
     protected $plugins = [
         'tocLink' => 'makeTocLink',
-        'anchorTag' => 'makeAnchorTag'
+        'classLink' => 'makeClasslink',
+        'functionLink' => 'makeFunctionLink',
+        'fileLink' => 'makeFileLink'
     ];
 
     protected function getTag($string = '') {
@@ -59,8 +61,22 @@ class AnchorLink extends Twig_Extension
         return sprintf("[%s](%s)", $title, '#' . $anchor);
     }
 
-    public function makeAnchorTag($link = '')
+    public function makeClasslink($name = '', $fullName = '')
     {
-        return sprintf('<a name="%s"></a>', $this->getTag($link));
+        $path = str_replace('\\', '/', $fullName);
+        $path = ltrim($path, '');
+        return sprintf('[%s](classes/%s.md)', $name, $path);
+    }
+
+    public function makeFunctionlink($name = '')
+    {
+        return sprintf('[%s](functions/%s.md)', $name, $name);
+    }
+
+    public function makeFileLink($name = '', $path = '')
+    {
+        $path = str_replace('\\', '/', $path);
+        $path = ltrim($path, '');
+        return sprintf('[%s](files/%s.md)', $name, $name);
     }
 }

@@ -6,7 +6,10 @@
   <copyright>Joshua Diamond 2018</copyright>
   <description>Documents public APIs and functions</description>
   <transformations>
-    <transformation writer="twig" source="templates/dimezilla-markdown/index.md.twig" artifact="README.md" />
+    <transformation writer="twig" query="files" source="templates/dimezilla-markdown/twig/file.md.twig" artifact="files/{{path}}.md" />
+    <transformation writer="twig" source="templates/dimezilla-markdown/twig/table-of-contents.md.twig" artifact="Readme.md" />
+    <transformation writer="twig" query="indexes.classes" source="templates/dimezilla-markdown/twig/class.md.twig" artifact="classes/{{FullyQualifiedStructuralElementName}}.md"/>
+    <transformation writer="twig" query="indexes.functions" source="templates/dimezilla-markdown/twig/function.md.twig" artifact="functions/{{name}}.md"/>
   </transformations>
   <parameters>
     <parameter key="twig-debug">true</parameter>

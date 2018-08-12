@@ -1,0 +1,14 @@
+{% extends "twig/layouts/mardown.md.twig" %}
+
+{% block content %}
+# {{ node.name }}
+{{ node.summary }}
+
+{% if node.description is not empty %}
+*description:* {{ node.description }}
+{% endif %}
+
+## Source:
+{% include 'twig/file.source.md.twig' with {'source': node.source } %}
+
+{% endblock %}

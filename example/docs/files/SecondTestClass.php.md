@@ -1,3 +1,9 @@
+# SecondTestClass.php
+Second test class to display in our example markup.
+
+
+## Source:
+```
 <?php
 /**
  * Second test class to display in our example markup.
@@ -37,3 +43,9 @@ class SecondTestClass
      */
     public static function sayMyName(){}
 }
+
+```
+
+___
+Documentation was generated from source code comments on 2018-08-12 using [phpDocumentor](http://www.phpdoc.org/) and [dimezilla/php-doc-markdown](https://github.com/dimezilla/php-doc-markdown)
+___

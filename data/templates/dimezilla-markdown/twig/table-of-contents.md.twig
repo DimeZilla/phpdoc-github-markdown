@@ -1,0 +1,27 @@
+{% extends "twig/layouts/mardown.md.twig" %}
+
+{% block content %}
+# Table of Contents
+
+**Classes**
+{% for class in project.indexes.classes|sort_asc %}
+{% if not class.abstract %}
+* {{ classLink(class.name, class.FullyQualifiedStructuralElementName ) }}
+{% for method in getMethods(class) %}
+    * {{ method.visibility }} {{ method.name }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+**Global Functions**
+{% for function in project.indexes.functions|sort_asc %}
+* {{ functionLink(function.name) }}
+{% endfor %}
+
+**Files**
+{% for file in project.files %}
+* {{ fileLink(file.name, file.path) }}
+{% endfor %}
+
+
+{% endblock %}
