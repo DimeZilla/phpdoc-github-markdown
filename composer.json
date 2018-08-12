@@ -1,5 +1,5 @@
 {
-    "name": "dimezilla/php-doc-markdown",
+    "name": "dimezilla/phpdoc-github-markdown",
     "description": "A writer for phpdoc to format my documentation into markdown",
     "type": "project",
     "license": "MIT",
