@@ -1,6 +1,8 @@
 # SecondTestClass
 `\DimeZilla\Test\SecondTestClass`
 
+**file:** [/SecondTestClass.php](files/SecondTestClass.php.md)
+
 **namespace:** `\DimeZilla\Test`
 
 This class does a lot of really awesome things I promise you!

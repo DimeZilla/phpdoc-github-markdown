@@ -4,7 +4,8 @@
 # {{ node.name }}
 {% if node.namespace is not empty %}**namespace:** {{ node.namespace }}{% endif %}
 
-**file:** {{ node.FullyQualifiedStructuralElementName }}
+
+**file:** {{ fileLink(node.path|addForwardSlash, node.path) }}
 
 {{ node.summary|raw }}
 

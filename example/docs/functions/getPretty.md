@@ -1,6 +1,7 @@
 # getPretty
 **namespace:** \
-**file:** \getPretty()
+
+**file:** [/TestFunctions.php](files/TestFunctions.php.md)
 
 What clothes should we wear today? Who needs shoes anyway am I right?
 

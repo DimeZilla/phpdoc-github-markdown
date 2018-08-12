@@ -1,6 +1,8 @@
 # TestClass
 `\DimeZilla\Test\TestClass`
 
+**file:** [/TestClass.php](files/TestClass.php.md)
+
 **namespace:** `\DimeZilla\Test`
 
 This class is a bunch of empty functions just to test our comments.

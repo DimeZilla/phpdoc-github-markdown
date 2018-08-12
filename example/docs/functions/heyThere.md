@@ -1,6 +1,7 @@
 # heyThere
 **namespace:** \
-**file:** \heyThere()
+
+**file:** [/TestFunctions.php](files/TestFunctions.php.md)
 
 Says Hey There
 
