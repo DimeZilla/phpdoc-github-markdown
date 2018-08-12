@@ -5,7 +5,7 @@
 {% if node.namespace is not empty %}**namespace:** {{ node.namespace }}{% endif %}
 
 
-**file:** {{ fileLink(node.path|addForwardSlash, node.path) }}
+**file:** {{ node.path|addForwardSlash }}
 
 {{ node.summary|raw }}
 

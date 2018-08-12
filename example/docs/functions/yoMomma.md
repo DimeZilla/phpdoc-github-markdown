@@ -1,7 +1,7 @@
 # yoMomma
 **namespace:** \
 
-**file:** [/TestFunctions.php](files/TestFunctions.php.md)
+**file:** /TestFunctions.php
 
 Did you call your mom today? If not, i'm going to tell you to go call
 her. She sacrificied 9 months + 18 years of her live bringing you into

@@ -1,7 +1,7 @@
 # TestClass
 `\DimeZilla\Test\TestClass`
 
-**file:** [/TestClass.php](files/TestClass.php.md)
+**file:** /TestClass.php
 
 **namespace:** `\DimeZilla\Test`
 

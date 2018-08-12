@@ -1,7 +1,7 @@
 # Dictionary
 `\DimeZilla\Test\Lib\Dictionary`
 
-**file:** [/lib/Dictionary.php](files/lib/Dictionary.php.md)
+**file:** /lib/Dictionary.php
 
 **namespace:** `\DimeZilla\Test\Lib`
 

@@ -1,7 +1,7 @@
 # SecondTestClass
 `\DimeZilla\Test\SecondTestClass`
 
-**file:** [/SecondTestClass.php](files/SecondTestClass.php.md)
+**file:** /SecondTestClass.php
 
 **namespace:** `\DimeZilla\Test`
 

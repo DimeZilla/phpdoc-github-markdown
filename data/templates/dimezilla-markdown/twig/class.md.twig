@@ -4,7 +4,7 @@
 # {{ node.name }}
 `{{ node.FullyQualifiedStructuralElementName }}`
 
-**file:** {{ fileLink(node.path|addForwardSlash, node.path) }}
+**file:** {{ node.path|addForwardSlash }}
 
 **namespace:** `{{ node.namespace }}`
 

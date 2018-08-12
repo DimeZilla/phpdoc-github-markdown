@@ -1,7 +1,7 @@
 # heyThere
 **namespace:** \
 
-**file:** [/TestFunctions.php](files/TestFunctions.php.md)
+**file:** /TestFunctions.php
 
 Says Hey There
 
