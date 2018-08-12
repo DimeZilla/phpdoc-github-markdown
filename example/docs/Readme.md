@@ -19,7 +19,7 @@
 **Files**
 * [TestFunctions.php](files/TestFunctions.php.md)
 * [TestClass.php](files/TestClass.php.md)
-* [Dictionary.php](files/Dictionary.php.md)
+* [Dictionary.php](files/lib/Dictionary.php.md)
 * [SecondTestClass.php](files/SecondTestClass.php.md)
 
 

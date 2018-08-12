@@ -77,6 +77,6 @@ class AnchorLink extends Twig_Extension
     {
         $path = str_replace('\\', '/', $path);
         $path = ltrim($path, '');
-        return sprintf('[%s](files/%s.md)', $name, $name);
+        return sprintf('[%s](files/%s.md)', $name, $path);
     }
 }
