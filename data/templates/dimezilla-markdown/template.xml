@@ -15,5 +15,6 @@
     <parameter key="twig-debug">true</parameter>
     <parameter key="twig-extension">DimeZilla\PHPDocMarkdown\Extension\Methods</parameter>
     <parameter key="twig-extension">DimeZilla\PHPDocMarkdown\Extension\AnchorLink</parameter>
+    <parameter key="twig-extension">DimeZilla\PHPDocMarkdown\Extension\Files</parameter>
   </parameters>
 </template>

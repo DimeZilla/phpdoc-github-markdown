@@ -19,8 +19,8 @@
 {% endfor %}
 
 **Files**
-{% for file in project.files %}
-* {{ fileLink(file.name, file.path) }}
+{% for file in project.files|sortByPath %}
+* {{ fileLink(file.path|addForwardSlash, file.path) }}
 {% endfor %}
 
 

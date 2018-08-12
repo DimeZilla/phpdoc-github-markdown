@@ -8,14 +8,11 @@ use Twig_Extension;
 
 class AnchorLink extends Twig_Extension
 {
-
-    use TwigPlugin;
-
     /**
-     * Stores a collection of our links
-     * @var array
+     * Use our TwigPlugin trait
+     * @see  \TwigPlugin  contains the full trait
      */
-    protected static $links = [];
+    use TwigPlugin;
 
     /**
      * required by TwigPlugin.
@@ -64,7 +61,7 @@ class AnchorLink extends Twig_Extension
     public function makeClasslink($name = '', $fullName = '')
     {
         $path = str_replace('\\', '/', $fullName);
-        $path = ltrim($path, '');
+        $path = ltrim($path, '\\');
         return sprintf('[%s](classes/%s.md)', $name, $path);
     }
 
@@ -76,7 +73,7 @@ class AnchorLink extends Twig_Extension
     public function makeFileLink($name = '', $path = '')
     {
         $path = str_replace('\\', '/', $path);
-        $path = ltrim($path, '');
+        $path = ltrim($path, '\\');
         return sprintf('[%s](files/%s.md)', $name, $path);
     }
 }

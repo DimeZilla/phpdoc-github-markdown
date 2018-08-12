@@ -5,6 +5,7 @@
 namespace DimeZilla\PHPDocMarkdown\Extension;
 
 use Twig_SimpleFunction;
+use Twig_SimpleFilter;
 
 /**
  * An Extendable class for generating twig plugins.
@@ -26,8 +27,29 @@ trait TwigPlugin
     public function getFunctions()
     {
         $ret = [];
+
+        // if we don't have the property, then let it go
+        if (!property_exists($this, 'plugins')) {
+            return $ret;
+        }
+
         foreach ($this->plugins as $handle => $method) {
             $ret[] = new Twig_SimpleFunction($handle, [$this, $method]);
+        }
+        return $ret;
+    }
+
+    public function getFilters()
+    {
+        $ret = [];
+
+        // if we don't have the property, then let it go
+        if (!property_exists($this, 'filters')) {
+            return $ret;
+        }
+
+        foreach ($this->filters as $handle => $method) {
+            $ret[] = new Twig_SimpleFilter($handle, [$this, $method]);
         }
         return $ret;
     }

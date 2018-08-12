@@ -17,10 +17,10 @@
 * [yoMomma](functions/yoMomma.md)
 
 **Files**
-* [TestFunctions.php](files/TestFunctions.php.md)
-* [TestClass.php](files/TestClass.php.md)
-* [Dictionary.php](files/lib/Dictionary.php.md)
-* [SecondTestClass.php](files/SecondTestClass.php.md)
+* [/SecondTestClass.php](files/SecondTestClass.php.md)
+* [/TestClass.php](files/TestClass.php.md)
+* [/TestFunctions.php](files/TestFunctions.php.md)
+* [/lib/Dictionary.php](files/lib/Dictionary.php.md)
 
 
 ___
