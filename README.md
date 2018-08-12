@@ -7,6 +7,9 @@ I could only find a documentator for public APIs but I wanted something that wou
 ## Got Issues?
 Write me a note or log an issue in github.
 
+## Example
+An example can be found here in [`./example/docs`](https://github.com/DimeZilla/phpdoc-github-markdown/tree/master/example/docs)
+
 ## Testing
 Run phpdoc from the `./example/` directory and see if the output is satisfactory to you.
 
