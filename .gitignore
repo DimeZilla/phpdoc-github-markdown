@@ -2,3 +2,4 @@
 /test/docs/
 /build/
 /vendor/
+composer.lock
