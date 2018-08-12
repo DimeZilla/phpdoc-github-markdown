@@ -14,3 +14,34 @@ Run phpdoc from the `./example/` directory and see if the output is satisfactory
 cd test
 ../vendor/bin/phpdoc
 ```
+
+## Installation
+
+An example phpdoc.xml can be found in `./example/phpdoc.xml`.
+
+If installing via composer try:
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>Diamond's Laravel helpers</title>
+    <parser>
+        <target>build</target>
+    </parser>
+    <transformer>
+        <target>docs</target>
+    </transformer>
+    <transformations>
+        <!-- lets us know if there are any errors in our comments -->
+        <template name="checkstyle" />
+        <template name="vendor/dimezilla/phpdoc-github-markdown/data/templates/dimezilla-markdown" />
+    </transformations>
+    <files>
+        <directory>src/</directory>
+    </files>
+</phpdoc>
+```
+
+## Inspiration
+I looked high and low for a phpdoc markdown generator that worked well with github but didn't quite find what I was looking for. This project is the very first time I've worked with phpdoc.
+
+I took a lot of inspiration from [cvourinen/phpdoc-markdown-public](https://github.com/cvuorinen/phpdoc-markdown-public). Big thanks to cvourien for this awesome project.

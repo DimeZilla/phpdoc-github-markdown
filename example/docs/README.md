@@ -1,20 +1,20 @@
 
 # Table of Contents
 
-## [Classes](#classes)
-* ### [\DimeZilla\Test\SecondTestClass](#secondtestclass)
+**[Classes](#classes)**
+* [\DimeZilla\Test\SecondTestClass](#secondtestclass)
     * public getInstance
     * public sayMyName
-* ### [\DimeZilla\Test\TestClass](#testclass)
+* [\DimeZilla\Test\TestClass](#testclass)
     * public __construct
     * public sayMessage
     * protected getMessage
     * private translateMessage
 
-## [Global Functions](#global-functions)
-* ### [getPretty](#getpretty)
-* ### [heyThere](#heythere)
-* ### [yoMomma](#yomomma)
+**[Global Functions](#global-functions)**
+* [getPretty](#getpretty)
+* [heyThere](#heythere)
+* [yoMomma](#yomomma)
 ___
 
 ### CLASSES

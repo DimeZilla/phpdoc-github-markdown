@@ -1,16 +1,16 @@
 # Table of Contents
 
-## {{ tocLink("Classes") }}
+**{{ tocLink("Classes") }}**
 {% for class in project.indexes.classes|sort_asc %}
 {% if not class.abstract %}
-* ### {{ tocLink(class.name, class.FullyQualifiedStructuralElementName ) }}
+* {{ tocLink(class.name, class.FullyQualifiedStructuralElementName ) }}
 {% for method in getMethods(class) %}
     * {{ method.visibility }} {{ method.name }}
 {% endfor %}
 {% endif %}
 {% endfor %}
 
-## {{ tocLink("Global Functions") }}
+**{{ tocLink("Global Functions") }}**
 {% for function in project.indexes.functions|sort_asc %}
-* ### {{ tocLink(function.name) }}
+* {{ tocLink(function.name) }}
 {% endfor %}
