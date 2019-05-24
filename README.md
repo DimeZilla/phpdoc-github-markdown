@@ -1,5 +1,5 @@
 # PHPDoc Github Markdown Documentor
-A template for writing documentation using phpDoc. Writes documentation for all Public apis and global functions.
+A template for writing documentation using phpDoc. Writes documentation for all Public apis and global functions for github's wiki.
 
 ## Why
 I could only find a documentator for public APIs but I wanted something that would document all declared functions as well.
@@ -8,7 +8,8 @@ I could only find a documentator for public APIs but I wanted something that wou
 Write me a note or log an issue in github.
 
 ## Example
-An example can be found here in [`./example/docs`](https://github.com/DimeZilla/phpdoc-github-markdown/tree/master/example/docs)
+An example project can be found here in [`./example`](https://github.com/DimeZilla/phpdoc-github-markdown/tree/master/example).
+To view the example wiki, see the wiki for this project: https://github.com/DimeZilla/phpdoc-github-markdown/wiki
 
 ## Testing
 Run phpdoc from the `./example/` directory and see if the output is satisfactory to you.
